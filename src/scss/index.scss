@@ -1,0 +1,37 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import "base/mixins";
+@import "base/variables";
+
+@import 'libs/bootstrap-reboot.min';
+@import "libs/fonts";
+
+@import "blocks/button";
+@import "blocks/title";
+@import "blocks/side-panel";
+@import "blocks/social";
+@import "blocks/hamburger";
+@import "blocks/header-section";
+
+@import "sections/hello";
+@import "sections/menu";
+@import "sections/about";
+@import "sections/resume";
+@import "sections/skills";
+@import "sections/works";
+@import "sections/price-list";
+@import "sections/contacts";
+
+@import "pages/policy";
+
+@import "media";

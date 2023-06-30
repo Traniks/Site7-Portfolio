@@ -1,0 +1,23 @@
+.hello {
+    min-height: 100vh;
+    padding: 205px 0 0;
+    position: relative;
+    background-image: url("../img/main_bg.jpg");
+    @include bg;
+    &__title_fz16 {
+        position: relative;
+        padding-left: 10px;
+        @include circle_text_left;
+        z-index: $elem-index-1;
+    }
+    &__title_fz48 {
+        margin: 10px 0 0;
+    }
+    &__btns {
+        margin: 25px 0 0;
+        width: 267px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

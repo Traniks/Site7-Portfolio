@@ -1,0 +1,15 @@
+// color
+$bg-main: #ffffff;
+
+$text-main: #000000;
+$text-second: #ffffff;
+
+$color-active: #FFA501;
+
+// z-index
+$elem-index-1: 1;   // Для наползающих элементов
+$elem-index-2: 2;   // Для наползающих элементов
+$mask-index: 3;     // Для масок и оверлеев
+$sidebar-index: 4;  // Для сайдбаров
+$modal-index: 5;    // Для модалок
+$topmost-index: 6;  // Для перекрывающих все элементов

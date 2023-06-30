@@ -1,0 +1,77 @@
+@mixin bg {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+@mixin text_fw500-fz14 {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	
+	color: $text-main;
+}
+@mixin text_fw500-fz12 {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	
+	color: $text-main;
+}
+
+//circle
+@mixin circle-standart {
+	&:before {
+		content: "";
+		position: absolute;
+
+		border-radius: 100%;
+		background-color: $color-active;
+		z-index: -1;
+	}
+}
+
+//circle-text
+@mixin circle_text_left {
+	@include circle-standart;
+	&:before {
+		width: 36px;
+		height: 36px;
+
+		top: -25%;
+		left: 0;
+	}
+}
+@mixin circle_text_ultra-left {
+	@include circle-standart;
+	&:before {
+		width: 15px;
+		height: 15px;
+
+		top: 50%;
+		left: -7px;
+		transform: translateY(-50%)
+	}
+}
+@mixin circle_text_midle {
+	@include circle-standart;
+	&:before {
+		width: 36px;
+		height: 36px;
+
+		top: -25%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+//circle-item
+@mixin circle_item_left {
+	@include circle-standart;
+	&:before {
+		width: 36px;
+		height: 36px;
+
+		top: 0;
+		left: 0;
+	}
+}
